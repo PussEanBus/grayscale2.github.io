@@ -1,0 +1,475 @@
+*{margin: 0; padding: 0;}
+:root{
+    --font1: 'Nunito', sans-serif;
+    --size1:23px;
+    --font2: 'Varela Round', sans-serif;
+    --light: #cecece;
+    --dark: #343a40;
+}
+body{
+    font-family: var(--font1);
+    display: block;
+    -webkit-tap-highlight-color: transparent;
+}
+.content{
+    background: url(1.jpg);
+    height: 100%;
+    width: 100%;
+    min-height: 50vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.content:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(top,#ffffff1e,
+    #bebebe15 40%,#131313 100%);
+}
+.content .topbar{
+    justify-content: center;
+    position: relative;
+    height: 12%;
+    line-height: 100px;
+    width: 100%;
+    background: transparent;    
+    position: fixed;
+    display: flex;
+}
+.content .topbar .top{
+    width: 1000px;
+    height: 100%;
+    display: flex;
+    background: transparent;
+}
+.content .topbar .top a{
+    text-decoration: none;
+    color: var(--light);
+}
+.content .topbar .top .trai{
+    justify-self: center;
+    width: 70%;
+    font-weight: bold;
+    font-size: var(--size1);
+}
+.content .topbar .top .phai{
+    justify-content: flex-end;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.content .topbar .top .phai ._1col{
+    width: 30%;
+    transition: 0.05s;
+    font-size: 17px;
+    font-family: var(--font2);
+}
+.content .topbar .top .phai a._1col:hover{color:rgb(236, 236, 236);}
+/* het thanh top */
+.header {
+    position: absolute;
+    height: 45vw;
+    width: 100%;
+    background: transparent;
+    margin:auto;
+    margin-top:15vw;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header > h1{
+    font-size: 6.5em;
+    margin-top: 4vw;
+    margin-bottom: 10px;
+    line-height: 100px;
+    letter-spacing: 15px;
+    font-weight: 200;
+    font-family: var(--font2);
+    background: -webkit-linear-gradient(rgba(248, 248, 248, 0.904),rgba(112, 112, 112, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.header > p{
+    justify-content: center;
+    display: flex;
+    color: rgba(255,255,255,.5);
+    font-size: 22px;
+    letter-spacing: 0px;
+    line-height: 25px;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 33%;
+}
+.header > a.nut{
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+    width: 200px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 22px 30px;
+    box-sizing: border-box;
+    background-color: rgba(87, 174, 174, 0.762);
+    font-size: 15px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+}
+.header > a.nut:hover{background-color:  rgb(59, 114, 114);}
+/* het css header */
+
+.subheader{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+.subheader:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(top,#131313 0%, #1f1e1e 50%,#535353 100%);
+}
+.subheader .noidung{
+    position: absolute;
+    text-align: center;
+    width: 1200px;
+    height: 100%;   
+    margin: auto;
+    /* display: flex;
+    flex-direction: column-reverse;
+    justify-content: center; */
+    /* background: transparent; */  
+}
+.subheader .noidung > h3{
+    color: rgba(223, 223, 223, 0.823);
+    /* margin: auto; */
+    margin-top: 200px;
+    font-size: 35px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+.subheader .noidung > p{
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    width: 100%;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #cccccccb;
+}
+.subheader .noidung > p > a{
+    color: rgb(79, 160, 160);
+    text-decoration: none;
+}
+.subheader .noidung > p > a:hover{
+    color: rgb(59, 114, 114);
+    
+}
+.subheader .noidung .anh{
+    width: 1200px;
+    height: 350px;
+    bottom: 0;
+    background-image: url(2.png);
+    background-position: center bottom;
+    background-size: cover;
+    position: absolute;
+}
+
+/* het sub header */
+.mid{
+    width: 100%;
+    height: 1650px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: rgb(248, 248, 248);
+}
+.mid .tren{
+    width: 1000px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    margin-top: 170px;
+}
+.mid .tren .trai{
+    width: 65%;
+    height: 100%;
+    background-image: url(1.jpg);
+    background-position: center bottom;
+    background-size: cover;
+}
+.mid .tren .phai{
+    width: 35%;
+    align-self: center;
+    padding-left: 30px;
+    border-left:  7px solid #64a19d;
+}
+.mid .tren .phai h3{
+    font-size: 23px;
+    font-weight: 80;
+    line-height: 40px;
+}
+.mid .tren .phai p{
+    color: rgb(142, 142, 142);
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 40;
+}
+.mid .duoi{
+    width: 1000px;
+    height: 700px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: rgb(24, 24, 24);
+}
+.mid .duoi .row1{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mid .duoi .row1 .trai{
+    width: 50%;
+    height: 100%;
+    background-image: url(3.jpg);
+    background-position: center bottom;
+    background-size: cover;
+}
+.mid .duoi .row1 .phai{
+    width: 50%;
+    color: rgb(142, 142, 142);
+    display: flex;
+    flex-direction: column;    
+}
+.mid .duoi .row1 .phai h4{
+    color: #f3f3f3;
+    line-height: 40px;
+    font-size: 25px;
+    padding-left: 50px;
+    font-weight: 50;
+}
+
+.mid .duoi .row1 .phai p{
+    color: #9d9d9d;
+    padding-left: 50px;
+    letter-spacing: 1px;
+}
+.mid .duoi .row1 .phai .bar{
+    width: 100px;
+    border-bottom:  5px solid #64a19d;
+    margin-left: 50px;
+    padding-top: 10px;
+}
+
+.mid .duoi .row2{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    /* position: relative; */
+}
+.mid .duoi .row2 .trai{
+    width: 50%;
+    background-color: rgb(24, 24, 24);
+    color: rgb(142, 142, 142);
+    position: relative;
+}
+.mid .duoi .row2 .trai h4{
+    color: #f3f3f3;
+    line-height: 40px;
+    font-size: 25px;
+    padding-right: 50px;
+    font-weight: 50;
+}
+.mid .duoi .row2 .trai p{
+    color: #9d9d9d;
+    padding-right: 50px;
+    letter-spacing: 1px;
+}
+.mid .duoi .row2 .trai .bar{
+    width: 100px;
+    border-bottom:  5px solid #64a19d;
+    padding-top: 10px;
+    position: absolute;
+    right: 50px;
+}
+.mid .duoi .row2 .phai{
+    width: 50%;
+    height: 100%;
+    background-image: url(4.jpg);
+    background-position: center bottom;
+    background-size: cover;
+}
+.bot{   
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(19, 19, 19);
+}
+.bot .tren{
+    width: 100%;
+    height: 1100px;
+    background-image: url(4.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.bot .tren:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(top,#6b6b6b75,
+    rgba(78, 78, 78, 0.397) 40%,rgb(19, 19, 19) 90%);
+}
+.bot .tren .noidung{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+.bot .tren i{
+    margin-top: 150px;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+}
+.bot .tren h3{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: 50;
+    line-height: 70px;
+}
+.bot .tren .search{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    height: 60px;
+}
+.bot .tren .search input{
+    width: 70%;
+    height: 100%;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.bot .tren .search a.nut{
+    width: 20%;
+    height: 100%;
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+    width: 200px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgb(70, 129, 129);
+    font-size: 15px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    text-align: center;
+    line-height: 60px;
+    font-size: 16px;
+}
+.bot .tren .search a.nut:hover{
+    background-color: rgb(48, 90, 90);
+}
+.bot .duoi{
+    margin-top: 0px;
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bot .duoi .small{
+    width: 28%;
+    height: 200px;
+    background-color: white;
+    padding: 10px;
+    border-bottom: 6px solid rgb(70, 129, 129);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bot .duoi .small i{
+    font-size: 20px;
+    color: rgb(70, 129, 129);
+    margin-top: 30px;
+}
+.bot .duoi .small i.big{
+    font-size: 26px;
+}
+.bot .duoi .small h3{
+    color: rgb(19, 19, 19);
+    margin-top: 7px;
+    font-weight: 80;
+    font-size: 15px;
+}
+.bot .duoi .small .bar{
+    margin-top: 25px;
+    width: 50px;
+    border-bottom: 5px solid rgb(70, 129, 129);
+}
+.bot .duoi .small p{
+    margin-top: 30px;
+    color: #919191;
+}
+.bot .duoi .small a{
+    margin-top: 30px;
+    color: rgb(70, 129, 129);
+}
+
+.bot .duoi2{
+    width: 250px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.bot .duoi2 .tron{
+    width: 20%;
+    height: 50px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 25px;
+}
+.bot .duoi2 .tron i{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+    color: rgb(117, 117, 117);
+}
+.bot .duoi2 p{
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: rgb(121, 121, 121);
+}
